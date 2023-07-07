@@ -1,0 +1,16 @@
+.navBar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: antiquewhite;
+}
+#logo{
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+}
+#cart-icon{
+    margin: 5px;
+
+}
