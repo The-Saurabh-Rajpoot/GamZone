@@ -29,7 +29,7 @@ const Main=()=>{
             {bestSaller.map((item,key)=>{
                 
                 return(
-                    <Item titel={item.attributes.Titel} price={item.attributes.price} description={item.attributes.Description} image={item.attributes.image} key={`${key} ${item.attributes.Titel}`} />
+                    <Item item={item.attributes} key={`${key} ${item.attributes.Titel}`} />
                 )
             })}
         </section>
