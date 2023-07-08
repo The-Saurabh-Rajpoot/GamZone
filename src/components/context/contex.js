@@ -1,12 +1,12 @@
 import React from "react";
 
-const cartContext=React.createContext();
-const cartProvider=(props)=>{
+const CartContext=React.createContext();
+const CartProvider=(props)=>{
     return(
         <cartContext.Provider>
             {props.children}
         </cartContext.Provider>
     )
 }
-export {cartContext,cartProvider}
+export {CartContext,CartProvider}
 
