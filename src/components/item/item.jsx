@@ -4,12 +4,12 @@ import { CartContext } from "../context/contex.js";
  const Item =({item})=>{
   
   const {UpdateCart}=useContext(CartContext)
-    
+  
 
     return(
         <>
         <section className="card" >
-          <img src={item?.image} className="image" alt="game-pic"></img>
+          <img src={`http://localhost:1337${item.image.data.attributes.formats.thumbnail.url}`} className="image" alt="game-pic"></img>
           <article className="titel">{item.Titel}</article>
           <article className="description">{item.Description}</article>
           <article className="price">{item.price}</article>

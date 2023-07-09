@@ -7,7 +7,8 @@ const Main=()=>{
     const [bestSaller,setBestSaller]=useState([]);
     const [war,setWar]=useState([]);
     useEffect(()=>{
-        axios.get('http://localhost:1337/api/best-sallers').then((best_saller)=>{
+        
+        axios.get('http://localhost:1337/api/best-sallers?populate=*').then((best_saller)=>{
                setBestSaller(best_saller.data.data);
         }).catch((err)=>{
             console.log(err)
