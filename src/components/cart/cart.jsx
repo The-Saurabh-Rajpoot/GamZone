@@ -2,6 +2,7 @@ import { useContext, useRef } from "react";
 import "./cart.css"
 import { CartContext } from "../context/contex";
 import useRazorpay from "react-razorpay";
+import Header from "../header/header";
 
 const Cart=()=>{
      const total=useRef(0);
@@ -42,6 +43,7 @@ const Cart=()=>{
      }
     return (
     <>
+    <Header />
     <section>
         {CartData.map((cartItem,index)=>{
             total.current=total.current+cartItem.price
