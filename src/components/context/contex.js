@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 
 const CartContext=React.createContext();
 const CartProvider=(props)=>{
@@ -9,9 +9,10 @@ const CartProvider=(props)=>{
         setCartData([...CartData,item])
         
     }
+    // const [state,action]=useReducer(intialState);
 
     return(
-        <CartContext.Provider value={{CartData,UpdateCart}}>
+        <CartContext.Provider value={{CartData,UpdateCart,setCartData}}>
             {props.children}
         </CartContext.Provider>
     )

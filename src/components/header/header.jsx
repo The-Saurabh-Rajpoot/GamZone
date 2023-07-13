@@ -10,7 +10,7 @@ const Header=()=>{
         <>
         <nav className="navBar">
             <section className="logo">
-               <Link to="/" ><img  id="logo" src="https://res.cloudinary.com/dyaznet0l/image/upload/v1688711380/DALL_E_2023-07-07_11.54.23_-_you_have_written_logo_name_is_Gamzone_but_it_should_be_GammerZone_t54u0z.png" alt="image"></img></Link>
+               <Link to="/" ><img  id="logo" src="https://res.cloudinary.com/dyaznet0l/image/upload/v1688711380/DALL_E_2023-07-07_11.54.23_-_you_have_written_logo_name_is_Gamzone_but_it_should_be_GammerZone_t54u0z.png" alt="image-of-game"></img></Link>
             </section>
             
                 <section className="cart">

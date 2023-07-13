@@ -15,8 +15,8 @@ const Main=()=>{
         }).finally(()=>{
 
         })
-        axios.get('http://localhost:1337/api/wars').then((best_saller)=>{
-               setWar(best_saller.data.data);
+        axios.get('http://localhost:1337/api/wars?populate=*').then((war)=>{
+               setWar(war.data.data);
         }).catch((err)=>{
             console.log(err)
         }).finally(()=>{
@@ -31,6 +31,14 @@ const Main=()=>{
                 
                 return(
                     <Item item={item.attributes} key={`${key} ${item.attributes.Titel}`} />
+                )
+            })}
+        </section>
+        <section>
+            {war.map((item,index)=>{
+                
+                return(
+                    <Item item={item.attributes} key={`${index} ${item.attributes.Titel}`} />
                 )
             })}
         </section>

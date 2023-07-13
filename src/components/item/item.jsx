@@ -9,7 +9,7 @@ import "./item.css"
     return(
         <>
         <section className="card-container" >
-          <img className="image" src={`http://localhost:1337${item.image.data.attributes.formats.thumbnail.url}`}  alt="game-pic"></img>
+          <img className="image" src={`http://localhost:1337${item.image.data.attributes?.formats.thumbnail.url}`}  alt="game-pic"></img>
           
           <article className="titel"><h1>{item.Titel}</h1></article>
           <article className="description">{item.Description}</article>
