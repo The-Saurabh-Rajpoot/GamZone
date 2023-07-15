@@ -27,11 +27,11 @@ const Cart = () => {
    
 }
   const razerPayDisplay = async (total) => {
-  
+   const razKey=process.env.REACT_APP_ROZARPAY_KEY
 
     const options = {
 
-      key: "rzp_test_yIcqnWe95ZysRA", // Enter the Key ID generated from the Dashboard
+      key: razKey, // Enter the Key ID generated from the Dashboard
       amount: parseInt(total.current) * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
       currency: "INR",
       name: "GamZone",
